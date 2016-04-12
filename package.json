@@ -1,6 +1,6 @@
 {
   "name": "slice-like",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Creates an Array from a slice of an Array-like object",
   "main": "lib/index.js",
   "scripts": {
