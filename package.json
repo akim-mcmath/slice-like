@@ -1,0 +1,43 @@
+{
+  "name": "slice-like",
+  "version": "0.0.0",
+  "description": "Creates an Array from a slice of an Array-like object",
+  "main": "lib/index.js",
+  "scripts": {
+    "jshint": "jshint . --exclude-path .gitignore",
+    "jscs": "jscs .",
+    "mocha": "istanbul cover -x *.test.js _mocha ./lib/**/*.test.js",
+    "test": "npm run jshint && npm run jscs && npm run mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "preversion": "npm run test"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akim-mcmath/slice-like.git"
+  },
+  "keywords": [
+    "slice",
+    "array",
+    "array-like",
+    "arguments",
+    "rest",
+    "rest-params"
+  ],
+  "author": "Akim McMath <akim.elijah.mcmath@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akim-mcmath/slice-like/issues"
+  },
+  "homepage": "https://github.com/akim-mcmath/slice-like#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5"
+  }
+}
